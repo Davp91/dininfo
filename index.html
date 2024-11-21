@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dininfo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dininfo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero-section">Hjem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Logg Inn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info-section">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-section">Om Oss</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero-section" class="text-center">
+        <div class="container">
+            <h2>Velkommen til Dininfo</h2>
+            <p class="lead">Dette er Dininfo. Din personlige informasjonssenter hvor din informasjon er lagret. Her kan du logge inn for å finne ut hvilken informasjon som er lagret på deg, og du kan endre på diverse ting.</p>
+            <a href="login.html" class="btn btn-primary btn-lg mt-3">Logg Inn</a>
+        </div>
+    </section>
+    
+
+    <!-- Info Section -->
+    <section id="info-section" class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4">Hva kan du gjøre på Dininfo?</h3>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h4>Se informasjon</h4>
+                    <p>Logg inn for å se hvilken informasjon som er lagret på deg i systemet.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Endre detaljer</h4>
+                    <p>Oppdater personlige opplysninger direkte i systemet.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Kontroller tilgang</h4>
+                    <p>Velg hvem som kan se og bruke informasjonen din.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Om oss Section -->
+    <section id="about-section" class="py-5 bg-white">
+        <div class="container">
+            <h3 class="text-center mb-4">Om Oss</h3>
+            <p class="text-center">Dininfo er en sikker plattform for å administrere din personlige informasjon. Vi streber etter å tilby enkel tilgang og full kontroll over dine data, samtidig som vi sikrer topp sikkerhet og brukervennlighet.</p>
+        </div>
+    </section>
+
+    <!-- Kontakt oss Section -->
+    <section id="contact-section" class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4">Kontakt</h3>
+            <form class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Navn</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Skriv inn ditt navn" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-post</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Skriv inn din e-post" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Melding</label>
+                    <textarea id="message" name="message" rows="4" class="form-control" placeholder="Skriv inn din melding" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Send Melding</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+        <p>© 2024 Dininfo | Alle rettigheter reservert</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

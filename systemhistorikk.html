@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dininfo - Personlig Informasjon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Dininfo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="personlig-info.html">Personlig Informasjon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tilgangskontroll.html">Tilgangskontroll</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="systemhistorikk.html">Systemhistorikk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="py-5">
+        <h2 class="text-center mb-4">Systemhistorikk</h2>
+        <p class="lead text-center">Se aktivitet i systemet relatert til dine data.</p>
+        <table class="table table-striped mx-auto" style="max-width: 800px;">
+            <thead>
+                <tr>
+                    <th>Dato</th>
+                    <th>Handling</th>
+                    <th>Bruker</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024-11-20</td>
+                    <td>Endret adresse</td>
+                    <td>Dininfo Admin</td>
+                </tr>
+                <tr>
+                    <td>2024-11-19</td>
+                    <td>Fjernet tilgang for Bruker 2</td>
+                    <td>Du</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+        <p>© 2024 Dininfo | Alle rettigheter reservert</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

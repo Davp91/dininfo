@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dininfo - Personlig Informasjon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Dininfo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="personlig-info.html">Personlig Informasjon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tilgangskontroll.html">Tilgangskontroll</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="systemhistorikk.html">Systemhistorikk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Personlig Informasjon</h2>
+            <p class="lead text-center">Her kan du se, redigere og legge til din personlige informasjon.</p>
+            
+            <!-- Personlig Info Section -->
+            <div class="mb-5">
+                <h4>Grunnleggende Informasjon</h4>
+                <ul id="personal-info-list" class="list-group">
+                    <li class="list-group-item">
+                        <strong>Navn:</strong> <span class="info">Ola Nordmann</span>
+                        <button class="btn btn-sm btn-secondary float-end edit-btn">Rediger</button>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Adresse:</strong> <span class="info">Kirkegata 15, 5000 Bergen</span>
+                        <button class="btn btn-sm btn-secondary float-end edit-btn">Rediger</button>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Fødselsnummer:</strong> <span class="info">01019912345</span>
+                        <button class="btn btn-sm btn-secondary float-end edit-btn">Rediger</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Skatte info Section -->
+            <div class="mb-5">
+                <h4>Skatteinformasjon</h4>
+                <ul id="tax-info-list" class="list-group">
+                    <li class="list-group-item">
+                        <strong>Inntekt:</strong> <span class="info">750,000 NOK</span>
+                        <button class="btn btn-sm btn-secondary float-end edit-btn">Rediger</button>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Betalt skatt:</strong> <span class="info">150,000 NOK</span>
+                        <button class="btn btn-sm btn-secondary float-end edit-btn">Rediger</button>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Arbeidsgiver:</strong> <span class="info">Statens Vegvesen</span>
+                        <button class="btn btn-sm btn-secondary float-end edit-btn">Rediger</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Legg til Section -->
+            <div>
+                <h4>Legg til Ny Informasjon</h4>
+                <form id="add-info-form" class="d-flex align-items-center gap-2">
+                    <input type="text" id="new-info-label" class="form-control" placeholder="Type informasjon (f.eks. 'E-post')" required>
+                    <input type="text" id="new-info-value" class="form-control" placeholder="Verdi (f.eks. 'ola.nordmann@email.com')" required>
+                    <button type="submit" class="btn btn-primary">Legg til</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+        <p>© 2024 Dininfo | Alle rettigheter reservert</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/personlig-info.js"></script> <!-- JavaScript for dynamic functionality -->
+</body>
+</html>

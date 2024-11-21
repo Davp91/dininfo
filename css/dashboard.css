@@ -1,0 +1,39 @@
+
+main {
+    flex: 1;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.dashboard-row {
+    margin-top: 3rem; 
+}
+
+
+p.lead {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.btn-secondary {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
